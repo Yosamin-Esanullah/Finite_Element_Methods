@@ -1,0 +1,146 @@
+/* Apply a modern font using Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, #e8f0fe, #f0f4ff);
+    color: #333;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 40px 0;
+    color: #2b2e4a;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 850px;
+    transition: all 0.3s ease;
+}
+
+.input-container:hover {
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+input[type="number"], input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4854c5;
+    transform: scale(1.05);
+}
+
+canvas {
+    border: 2px solid #ddd;
+    background-color: white;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 850px;
+}
+
+#results-tables {
+    width: 80%;
+    max-width: 850px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #2b2e4a;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2b2e4a;
+}
+
+/* Update canvas elements for line thickness and color */
+canvas {
+    border: 2px solid #ddd;
+}
+
+.legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
